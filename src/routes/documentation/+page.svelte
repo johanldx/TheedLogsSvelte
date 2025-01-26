@@ -300,14 +300,18 @@ echo $response;`,
     });
 </script>
 
-<header class="flex justify-between mb-5">
-    <div class="flex">
+<svelte:head>
+    <title>Documentation</title>
+</svelte:head>
+
+<header class="flex justify-between items-center mb-5">
+    <div class="flex items-center">
         <a href="/" class="text-2xl font-bold text-green-theed">Logs <span class="text-primary">Theed</span></a>
-        <img class="ml-1 w-5 object-contain" src="theed-eyes.png" alt="Theed eyes">
+        <img class="ml-1 w-5 h-5 object-contain" src="theed-eyes.png" alt="Theed eyes">
     </div>
 
     <nav>
-        <a href="/app" class="bg-gray-900 px-5 py-3 rounded text-gray-100">Retour</a>
+        <button on:click={() => history.back()} class="bg-gray-900 px-5 py-3 rounded text-gray-100">Retour</button>
     </nav>
 </header>
 

@@ -1,11 +1,15 @@
-<header class="flex justify-between mb-5">
-    <div class="flex">
+<svelte:head>
+    <title>Mentions légales</title>
+</svelte:head>
+
+<header class="flex justify-between items-center mb-5">
+    <div class="flex items-center">
         <a href="/" class="text-2xl font-bold text-green-theed">Logs <span class="text-primary">Theed</span></a>
-        <img class="ml-1 w-5 object-contain" src="theed-eyes.png" alt="Theed eyes">
+        <img class="ml-1 w-5 h-5 object-contain" src="theed-eyes.png" alt="Theed eyes">
     </div>
 
     <nav>
-        <a href="/" class="bg-gray-900 px-5 py-3 rounded text-gray-100">Retour</a>
+        <button on:click={() => history.back()} class="bg-gray-900 px-5 py-3 rounded text-gray-100">Retour</button>
     </nav>
 </header>
 
@@ -34,7 +38,9 @@
     <p><span class="font-medium">Nom du responsable de la publication :</span> Johan Ledoux</p>
     <p><span class="font-medium">Adresse e-mail :</span> johan.ledoux25@gmail.com</p>
 
-    <h1 class="font-semibold text-2xl mb-5">Conditions Générales d'Utilisation (CGU)</h1>
+    <h1 class="font-semibold text-2xl my-5">Politique de confidentialité</h1>
 
-    <h1 class="font-semibold text-2xl mb-5">Conditions Générales de Vente (CGV)</h1>
+    <h1 class="font-semibold text-2xl my-5">Conditions Générales d'Utilisation (CGU)</h1>
+
+    <h1 class="font-semibold text-2xl my-5">Conditions Générales de Vente (CGV)</h1>
 </div>
