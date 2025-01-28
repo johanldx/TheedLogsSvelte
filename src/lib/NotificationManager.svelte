@@ -1,6 +1,5 @@
 <script lang="ts">
     import { notifications } from '$lib/stores/notifications';
-    import type { Notification } from '$lib/stores/notifications';
 
     export let position: 'bottom-left' | 'bottom-right' | 'top-left' | 'top-right' = 'bottom-right';
 
@@ -13,10 +12,10 @@
 </script>
 
 <div class="fixed z-50 space-y-3 {positionClasses[position]}">
-    {#each $notifications as { id, type, message }}
+    {#each $notifications as { type, message }}
         <div
             class="text-white px-6 py-3 rounded-lg shadow-lg flex items-center space-x-3"
-            class:bg-green-500={type === 'success'}
+            class:bg-primary={type === 'success'}
             class:bg-yellow-500={type === 'warning'}
             class:bg-red-500={type === 'error'}
         >

@@ -33,7 +33,7 @@
 
     <div class="my-5">
         <p class="font-medium">📋 Gestion des logs</p>
-        <p>Envoyez des logs détaillés accompagnés de métadonnées et accédez-y facilement via notre API ou notre interface intuitive sans limite de durée.</p>
+        <p>Envoyez des logs détaillés et accédez-y facilement via notre API ou notre interface intuitive sans limite de durée.</p>
     </div>
 
     <div class="my-5">
@@ -60,7 +60,7 @@
 <footer class="flex flex-col items-center gap-2">
     <img src="theed-logo.png" alt="Logo" class="w-16 object-contain">
     <div class="flex gap-5">
-        <a href="/legal" class="text-gray-500">Mentions légales</a>
+        <a href="/legal" class="text-gray-500">Informations légales</a>
         <a href="#tally-open=mDxkoR&tally-width=450&tally-hide-title=1&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave" class="text-gray-500">Nous contacter</a>
         <a href="/documentation" class="text-gray-500">Documentation</a>
     </div>

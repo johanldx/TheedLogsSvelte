@@ -148,7 +148,7 @@
             <option value="">Pas de notifications</option>
             <option value="DEBUG">DEBUG</option>
             <option value="INFO">INFO</option>
-            <option value="WARNING">WARNING</option>
+            <option value="WARN">WARN</option>
             <option value="ERROR">ERROR</option>
             <option value="FATAL">FATAL</option>
         </select> <br>

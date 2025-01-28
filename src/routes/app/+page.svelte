@@ -165,7 +165,7 @@
     >
         <option selected disabled value="">Sélectionner une application</option>
         {#each applications as app}
-            <option value={app.uid}>{app.name}</option>
+            <option value={app.uid}>{app.name  + ' (' + app.organization.name + ')'}</option>
         {/each}
     </select>
 
